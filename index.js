@@ -58,12 +58,7 @@ app.get('/public', (req, res) => {
 })
 
 app.get('/haruslogin', [userLogin], (req, res) => {
-
-
     console.log(req.session.username);
-
-
-
     return res.send('Berhasil Masuk Cik' + 'user login:' + req.session.username);
 })
 
